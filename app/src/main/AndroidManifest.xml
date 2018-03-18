@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="shutdownlock.com.br.shutdown_lock">
+
 
     <application
         android:allowBackup="true"
@@ -21,16 +23,6 @@
             android:name=".services.ServicoUsuarioPresente"
             android:enabled="true"
             android:exported="false" />
-
-        <receiver
-            android:name=".broadcast.BroadcastReceiverUsuarioPresente"
-            android:enabled="true"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="android.intent.action.USER_PRESENT"/>
-            </intent-filter>
-        </receiver>
-
     </application>
 
 </manifest>

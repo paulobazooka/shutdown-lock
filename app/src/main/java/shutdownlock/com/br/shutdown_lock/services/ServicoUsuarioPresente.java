@@ -5,8 +5,6 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.util.Log;
 
-import shutdownlock.com.br.shutdown_lock.broadcast.BroadcastReceiverUsuarioPresente;
-
 public class ServicoUsuarioPresente extends Service {
 
     private long tempo = 0;
@@ -51,6 +49,6 @@ public class ServicoUsuarioPresente extends Service {
     @Override
     public void onDestroy() {
         super.onDestroy();
-       // Log.i("Serviço", "onDestroy");
+        Log.i("Serviço", "onDestroy");
     }
 }
